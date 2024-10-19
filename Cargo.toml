@@ -1,0 +1,15 @@
+[package]
+name = "minigame"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+anyhow = "1.0.90"
+dotenv = "0.15.0"
+reqwest = { version = "0.12.8", features = ["json"] }
+serde = { version = "1.0.210", features = ["derive"] }
+thiserror = "1.0.64"
+tracing = "0.1.40"
+
+[dev-dependencies]
+tokio = { version = "1.40.0", features = ["rt","rt-multi-thread","macros"] }
