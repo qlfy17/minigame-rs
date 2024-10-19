@@ -128,6 +128,7 @@ mod tests {
             .secret(&secret)
             .build();
         let res = client.get_stable_access_token(req).await?;
+        assert!(!res.access_token.is_empty());
         println!("{:#?}", res);
         Ok(())
     }
